@@ -1,18 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export default function Navigation() {
     return (
         <ul style={{ display: 'flex' }}>
-            <Link to="/">
+            <NavLink exact activeClassName="current" to="/">
                 <li style={{ marginLeft: 10, listStyle: 'none' }}>Accueil</li>
-            </Link>
-            <Link to="/Projets">
+            </NavLink>
+            <NavLink exact activeClassName="current" to="/Projets">
                 <li style={{ marginLeft: 10, listStyle: 'none' }}>Projets</li>
-            </Link>
-            <Link to="/Contact">
+            </NavLink>
+            <NavLink exact activeClassName="current" to="/Contact">
                 <li style={{ marginLeft: 10, listStyle: 'none' }}>Contact</li>
-            </Link>
+            </NavLink>
         </ul>
     )
 }

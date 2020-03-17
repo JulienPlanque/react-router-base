@@ -15,6 +15,7 @@ function App() {
         <Switch> {/* Permet de gérer les erreurs 404 */}
           <Route path="/" exact component={Accueil} />
           <Route path="/Projets" exact component={Projets} />
+          <Route path="/Projets/:slug" exact component={Projets} />
           <Route path="/Contact" exact component={Contact} />
           <Route path="/" component={() => <div>ERREUR 404</div>} />
         </Switch>
